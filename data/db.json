@@ -1,0 +1,14 @@
+{
+    "list":[
+        {
+            "id": 1,
+            "cheaked":false,
+            "item":"learn"
+        },
+        {
+            "id": 2,
+            "cheaked":true,
+            "item":"somthing"
+        }
+    ]
+}

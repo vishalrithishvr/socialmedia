@@ -1,0 +1,228 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: #2E5077;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    height: 50px;
+    background-color: #4DA1A9;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.app-name{
+    border: 2px solid;
+    border-radius: 20px 0px 0px 20px;
+    padding: 10px;
+/* }
+.app-name p{ */
+    font-size: 20px;
+    color: #fff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Containers */
+div {
+    padding: 20px;
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+}
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+/* Login */
+.login,.admin-login{
+    color:#F6F4F0;
+    margin-top: 20px;
+    /* background-color: #F6F4F0;
+    background-image: url('../image/pexels-pixabay-33109.jpg');
+    border-radius: 20px;
+    border: 2px solid; */
+}
+/* Forms */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, select, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #2E5077;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Posts and Profile */
+
+.user_list{
+    display:grid;
+    gap: 10px;
+    width:80%;
+    grid-template-columns: 33% 33% 33%;
+}
+.user_list div{
+    background-color: #f9f9f9;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+.post img{
+    width:500px;
+}
+
+.post .user_profile_image{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.admin_profile_images{
+    display:grid;
+    width: 90%;
+    margin-top: 20px;
+    background-color: whitesmoke;
+    grid-template-columns:33% 33% 33%;
+    text-align: center;
+    border:2px solid;
+}
+.profile_choosed div{
+    align-items: center;
+}
+.profile_choosed img{
+    border:2px solid;
+    object-fit: cover;
+    height: 350px;
+    width: 80%;
+}
+
+a{   
+    text-decoration: none;
+}
+.profile_choosed p{
+    font-size: 100px;
+}
+.user{
+    background-color: #79D7BE;
+}
+.post, .user {
+    /* background-color: white; */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.post{
+    background-color: #4DA1A9;
+    background-size: cover;
+}
+
+.post img {
+    border-radius: 0;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.post button, .user button {
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.post button:hover, .user button:hover {
+    background-color: darkred;
+}
+
+/* Admin Section */
+.admin-section {
+    display: flex;
+    background-image: url('../image/pexels-eberhardgross-1624496.jpg');
+    flex-direction: column;
+    align-items: center;
+    /* padding: 10px; */
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.admin-section>h1, .admin-section>h2{
+    color:#fff;
+}
+
+/* Responsiveness */
+
+
+
+@media (max-width: 1024px) {
+    .admin_profile_images{
+        grid-template-columns:50% 50%;
+    }
+}
+@media (max-width: 768px) {
+    
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        font-size: 14px;
+    }
+
+    form {
+        width: 90%;
+    }
+    
+    .user_list{
+        grid-template-columns: 100%;
+    }
+    
+    .admin_profile_images{
+        grid-template-columns:100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+    
+}
